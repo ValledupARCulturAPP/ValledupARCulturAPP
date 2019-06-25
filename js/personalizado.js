@@ -32,5 +32,8 @@ $(document).ready(function () {
 	 	$("#Marcado5").addClass("active");
 	});
 
-
+	$("#Marcado6").on("click", function () {
+		$('#navbarSupportedContent li.active').removeClass('active');
+	 	$("#Marcado6").addClass("active");
+	});
 });
