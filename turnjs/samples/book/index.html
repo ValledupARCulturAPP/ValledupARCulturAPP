@@ -1,0 +1,55 @@
+<style type="text/css">
+	/*#magazine{
+	    width: 750px;
+	    height: 490px;
+	}*/
+	#magazine .turn-page{
+	    background-color:#ccc;
+	}
+	.hard {
+    	background: #ccc !important;
+	    color: #333;
+	    -webkit-box-shadow: inset 0 0 5px #666;
+	    -moz-box-shadow: inset 0 0 5px #666;
+	    -o-box-shadow: inset 0 0 5px #666;
+	    -ms-box-shadow: inset 0 0 5px #666;
+	    box-shadow: inset 0 0 5px #666;
+	    font-weight: bold;
+	}
+
+	.pageStyle{
+		background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../../lib/turn.js"></script>
+<div id="magazine">
+	<!-- <div class="hard"></div> -->
+	<!-- <div class="hard"></div> -->
+	<div class="pageStyle" style="background-image: url('./pages/portada.JPG');"><span class="text" ></span></div>
+	<div class="pageStyle" style="background-image: url('./pages/contenido.JPG');"><span class="text" ></span></div>
+    <!-- <div class="pageStyle" style="background-image: url('./pages/contenido.JPG');"><span class="text"></span></div> -->
+    <div class="pageStyle" style="background-image: url('./pages/capitulo01.JPG');"><span class="text" ></span></div>
+    <div class="pageStyle" style="background-image: url('./pages/capitulo02.JPG');"><span class="text" ></span></div>
+    <div class="pageStyle" style="background-image: url('./pages/capitulo03.JPG');"><span class="text"></span></div>
+    <div class="pageStyle" style="background-image: url('./pages/capitulo04.JPG');"><span class="text" ></span></div>
+    <div class="pageStyle" style="background-image: url('./pages/capitulo05.JPG');"><span class="text" ></span></div>
+    <div class="pageStyle" style="background-image: url('./pages/diapositiva.JPG');"><span class="text" ></span></div>
+    <!-- <div class="pageStyle" style="background-image: url('./pages/titulo.JPG');"><span class="text"></span></div> -->
+    <!-- <div class="hard"></div> -->
+</div>
+<script type="text/javascript">
+	$("#magazine").turn({
+		width: 900,
+		height: 650,
+		// autoCenter: true,
+		// gradients: true, 
+		// acceleration: true
+	});
+
+// 	$("#zoom-viewport").zoom({
+// 	flipbook: $("#flipbook"),
+// 	max: 3
+// });
+</script>
